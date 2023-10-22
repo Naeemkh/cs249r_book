@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,9 +16,10 @@ jobs:
       - name: Build
         run: quarto render
       - name: Upload artifact
-      if: ${{ github.event_name == 'pull_request' }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: docs
-        path: docs
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: docs
+
       
