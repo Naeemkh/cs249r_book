@@ -72,42 +72,42 @@
   {
     "objectID": "introduction.html#overview",
     "href": "introduction.html#overview",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.1 Overview",
     "text": "1.1 Overview\nWelcome to this comprehensive exploration of Tiny Machine Learning (TinyML). This book aims to bridge the gap between intricate machine learning theories and their practical applications on small devices. Whether you’re a newcomer, an industry professional, or an academic researcher, this book offers a balanced mix of essential theory and hands-on insights into TinyML."
   },
   {
     "objectID": "introduction.html#whats-inside",
     "href": "introduction.html#whats-inside",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.2 What’s Inside",
     "text": "1.2 What’s Inside\nThe book starts with a foundational look at embedded systems and machine learning, focusing on deep learning methods due to their effectiveness across various tasks. We then guide you through the entire machine learning workflow, from data engineering to advanced model training.\nWe also delve into TinyML model optimization and deployment, with a special emphasis on on-device learning. You’ll find comprehensive discussions on current hardware acceleration techniques and model lifecycle management. Additionally, we explore the sustainability and ecological impact of AI, and how TinyML fits into this larger conversation.\nThe book concludes with a look at the exciting possibilities of generative AI within the TinyML context."
   },
   {
     "objectID": "introduction.html#chapter-breakdown",
     "href": "introduction.html#chapter-breakdown",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.3 Chapter Breakdown",
     "text": "1.3 Chapter Breakdown\nHere’s a closer look at what each chapter covers:\nChapter 1: Introduction This chapter sets the stage, providing an overview of embedded AI and laying the groundwork for the chapters that follow.\nChapter 2: Embedded Systems We introduce the basics of embedded systems, the platforms where AI algorithms are widely applied.\nChapter 3: Deep Learning Primer This chapter offers a comprehensive introduction to the algorithms and principles that underpin AI applications in embedded systems.\nChapter 4: Embedded AI Here, we explore how machine learning techniques can be integrated into embedded systems, enabling intelligent functionalities.\nChapter 5: AI Workflow This chapter breaks down the machine learning workflow, offering insights into the steps leading to proficient AI applications.\nChapter 6: Data Engineering We focus on the importance of data in AI systems, discussing how to effectively manage and organize data.\nChapter 7: AI Training This chapter delves into model training, exploring techniques for developing efficient and reliable models.\nChapter 8: On-Device AI Here, we discuss strategies for achieving efficiency in AI applications, from computational resource optimization to performance enhancement.\nChapter 9: Model Optimizations We explore various avenues for optimizing AI models for seamless integration into embedded systems.\nChapter 10: AI Frameworks This chapter reviews different frameworks for developing machine learning models, guiding you in choosing the most suitable one for your projects.\nChapter 11: AI Acceleration We discuss the role of specialized hardware in enhancing the performance of embedded AI systems.\nChapter 12: Benchmarking AI This chapter focuses on how to evaluate AI systems through systematic benchmarking methods.\nChapter 13: On-Device Learning We explore techniques for localized learning, which enhances both efficiency and privacy.\nChapter 14: Embedded AIOps This chapter looks at the processes involved in the seamless integration, monitoring, and maintenance of AI functionalities in embedded systems.\nChapter 15: Privacy and Security As AI becomes more ubiquitous, this chapter addresses the crucial aspects of privacy and security in embedded AI systems.\nChapter 16: Responsible AI We discuss the ethical principles guiding the responsible use of AI, focusing on fairness, accountability, and transparency.\nChapter 17: AI Sustainability This chapter explores practices and strategies for sustainable AI, ensuring long-term viability and reduced environmental impact.\nChapter 18: Generative AI We explore the algorithms and techniques behind generative AI, opening avenues for innovation and creativity.\nChapter 19: AI for Good\nWe highlight positive applications of TinyML in areas like healthcare, agriculture, and conservation."
   },
   {
     "objectID": "introduction.html#how-to-navigate-this-book",
     "href": "introduction.html#how-to-navigate-this-book",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.4 How to Navigate This Book",
     "text": "1.4 How to Navigate This Book\nTo get the most out of this book, consider the following structured approach:\n\nFoundational Knowledge (Chapters 1-4): Start by building a strong foundation with the initial chapters, which provide the context and groundwork for more advanced topics.\nPractical Insights (Chapters 5-14): With a solid foundation, move on to the chapters that offer practical insights into machine learning workflows, data engineering, and optimizations. Engage in hands-on exercises and case studies to solidify your understanding.\nEthics and Sustainability (Chapters 15-17): These chapters offer a critical perspective on the ethical and sustainable practices in AI, encouraging responsible AI deployment.\nFuture Trends (Chapter 18): Conclude your journey by exploring the exciting domain of generative AI, which offers a glimpse into the future of the field.\nInterconnected Learning: While the chapters are designed for a progressive learning curve, feel free to navigate non-linearly based on your interests and needs.\nPractical Applications: Throughout the book, try to relate theoretical knowledge to real-world applications. Engage with practical exercises and case studies to bridge the gap between theory and practice.\nDiscussion and Networking: Engage in discussions, forums, or study groups to share insights and debate concepts, which can deepen your understanding.\nRevisit and Reflect: Given the dynamic nature of AI, don’t hesitate to revisit chapters. A second reading can offer new insights and foster continuous learning.\n\nBy adopting this structured yet flexible approach, you’re setting the stage for a fulfilling and enriching learning experience."
   },
   {
     "objectID": "introduction.html#the-road-ahead",
     "href": "introduction.html#the-road-ahead",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.5 The Road Ahead",
     "text": "1.5 The Road Ahead\nAs we navigate the multifaceted world of embedded AI, we’ll cover a broad range of topics, from computational theories and engineering principles to ethical considerations and innovative applications. Each chapter unveils a piece of this expansive puzzle, inviting you to forge new connections, ignite discussions, and fuel a perpetual curiosity about embedded AI. Join us as we explore this fascinating field, which is not only reshaping embedded systems but also redrawing the contours of our technological future."
   },
   {
     "objectID": "introduction.html#contribute-back",
     "href": "introduction.html#contribute-back",
-    "title": "1  Introduction",
+    "title": "1  Introduction and project",
     "section": "1.6 Contribute Back",
     "text": "1.6 Contribute Back\nLearning in the fast-paced world of embedded AI is a collaborative journey. This book aims to nurture a vibrant community of learners, innovators, and contributors. As you explore the concepts and engage with the exercises, we encourage you to share your insights and experiences. Whether it’s a novel approach, an interesting application, or a thought-provoking question, your contributions can enrich the learning ecosystem. Engage in discussions, offer and seek guidance, and collaborate on projects to foster a culture of mutual growth and learning. By sharing knowledge, you play a pivotal role in fostering a globally connected, informed, and empowered community."
   },
