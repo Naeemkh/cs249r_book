@@ -15,9 +15,10 @@ jobs:
       - name: Build
         run: quarto render
       - name: Upload artifact
-      if: ${{ github.event_name == 'pull_request' }}
-      uses: actions/upload-artifact@v3
-      with:
-        name: _book
-        path: _book
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: _book
+          path: _book
+
       
