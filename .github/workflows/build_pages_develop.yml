@@ -1,0 +1,39 @@
+name: Check for build (Ubuntu)
+
+on:
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Build on Ubuntu
+        run: quarto render --to html
+      - name: Upload artifact from Ubuntu
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: _book-ubuntu
+          path: _book
+      - name: stage files
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: '_book'
+          destination-github-username: 'naeemkh'
+          destination-repository-name: 'cs249r_book_build_develop'
+          user-email: khoshnevis.naeem@gmail.com
+          target-branch: 'main'
+          target-directory: 'docs'
+          commit-message: 'Push artifact to another repository'
+      
+
