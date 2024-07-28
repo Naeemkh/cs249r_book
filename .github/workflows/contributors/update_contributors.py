@@ -167,7 +167,7 @@ def main(_):
       commit_data_df.loc[index, 'username'] = user_data['username']
 
       if pd.isna(row.user_full_name) or (
-          row.user_full_name == row.username and not pd.isna(
+          row.user_full_name.lower() == row.username.lower() and not pd.isna(
           user_data['user_full_name'])):
         commit_data_df.loc[index, 'user_full_name'] = user_data[
           'user_full_name']
