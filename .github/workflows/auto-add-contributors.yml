@@ -58,11 +58,16 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Upload .all-contributorsrc file
+    - name: Copy .all-contributorsrc to all-contributors.txt
+      run: |
+        cp .all-contributorsrc all-contributors.txt
+
+    - name: Upload all-contributors.txt file
       uses: actions/upload-artifact@v3
       with:
-        name: all-contributorsrc
-        path: ./.all-contributorsrc
+        name: all-contributors-txt
+        path: ./all-contributors.txt
+
 
     - name: Upload contributors.qmd file
       uses: actions/upload-artifact@v3
