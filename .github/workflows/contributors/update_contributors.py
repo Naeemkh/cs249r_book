@@ -25,10 +25,6 @@ def get_user_data_from_username(username):
   res = requests.get(f"https://api.github.com/users/{username}",
                      headers=headers)
   
-  if DEBUG:
-    print(f"Getting user data for username: {username}")
-    print(f"Response: {res.json()}")
-
   user_full_name = pd.NA
   email_address = pd.NA
   if res.status_code == 200:
@@ -109,12 +105,6 @@ def main(_):
     user_full_name = pd.NA
     username = pd.NA
 
-    if DEBUG:
-      print(f"commit_author_info: {commit_author_info}")
-      print(f"commit_commiter_info: {commit_commiter_info}")
-      print(f"author_info: {author_info}")
-      print(f"committer_login_info: {committer_login_info}")
-
     if commit_author_info:
       user_full_name = commit_author_info["name"]
     elif commit_commiter_info:
@@ -128,10 +118,6 @@ def main(_):
     
     if username:
         usernames.add(username)
-
-    if DEBUG:
-      print(f"user_full_name: {user_full_name}")
-      print(f"username: {username}")
 
     commit_data.append(
         {
