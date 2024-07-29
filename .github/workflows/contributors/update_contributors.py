@@ -94,6 +94,7 @@ def main(_):
     next_page = res.links.get("next", {}).get("url", None)
     last_page = res.links.get("last", {}).get("url", None)
 
+  usernames = set()
   commit_data = []
   for node in data:
     commit_message = node.get("commit", {}).get("message", pd.NA)
@@ -124,6 +125,10 @@ def main(_):
     elif committer_login_info:
       username = committer_login_info["login"]
 
+    
+    if username:
+        usernames.add(username)
+
     if DEBUG:
       print(f"user_full_name: {user_full_name}")
       print(f"username: {username}")
@@ -136,6 +141,12 @@ def main(_):
         }
     )
   commit_data_df = pd.DataFrame(commit_data)
+
+  username_to_fullname = {}
+  for username in usernames:
+      user_data = get_user_data_from_username(username)
+      username_to_fullname[username] = user_data['user_full_name']
+
   co_authors_list = [get_co_authors_from_commit_message(row["commit_message"])
                      for index, row in commit_data_df.iterrows()]
   co_authors_df = pd.concat(co_authors_list, ignore_index=True)
@@ -211,6 +222,10 @@ def main(_):
       lambda row: row['username'] if '@' in row['user_full_name'] else row[
         'user_full_name'],
       axis=1)
+  
+  commit_data_df['user_full_name'] = commit_data_df.apply(
+    lambda row: username_to_fullname[row['username']] if row['username'] in username_to_fullname else row['user_full_name'], axis=1
+    )
 
   def generate_gravatar_url(name):
     name_list = list(name)
