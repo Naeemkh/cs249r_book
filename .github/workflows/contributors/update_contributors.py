@@ -115,9 +115,11 @@ def main(_):
     elif committer_login_info:
       username = committer_login_info["login"]
 
-    
-    if username:
-        usernames.add(username)
+    try:
+        if username:
+            usernames.add(username)
+    except Exception as e:
+        logging.error(f"Error parsing username: {username}")
 
     commit_data.append(
         {
